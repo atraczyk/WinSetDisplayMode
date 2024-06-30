@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake Build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build" // Assumes your build directory is at <workspaceFolder>/build
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc" // Adjust if using a different compiler
+            ],
+            "detail": "Compiles the current project using CMake.",
+            "dependsOn": ["CMake Configure"]
+        },
+        {
+            "label": "CMake Configure",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-S",
+                "${workspaceFolder}", // Source directory
+                "-B",
+                "${workspaceFolder}/build" // Build directory
+            ],
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "Configures the project with CMake."
+        }
+    ]
+}
