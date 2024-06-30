@@ -44,8 +44,8 @@ WinSetDisplayMode.exe [width] [height] [refresh rate]
 If no arguments are provided, the tool will revert to the previously saved resolution and refresh rate.
 
 ## TODO
-- Add support for multiple monitors.
-- Add support for HDR settings.
+- Add support for multiple monitors
+- Add support for HDR settings (https://github.com/LizardByte/Sunshine/discussions/849#discussioncomment-8659599)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
