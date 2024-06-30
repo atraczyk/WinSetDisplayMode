@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(ChangeResolution)
+project(WinSetDisplayMode)
 
-add_executable(ChangeResolution main.cpp)
+add_executable(WinSetDisplayMode main.cpp)
 
-target_link_libraries(ChangeResolution PRIVATE user32 gdi32)
+target_link_libraries(WinSetDisplayMode PRIVATE user32 gdi32)

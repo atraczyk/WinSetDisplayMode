@@ -2,10 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(Windows) Launch",
+            "name": "(Windows) Launch and Debug",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/Debug/ChangeResolution.exe",
+            "program": "${workspaceFolder}/build/Debug/WinSetDisplayMode.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
